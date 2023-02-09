@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  var apiRoot = 'https://tasks-prod-tasks-database-qevqo1.mo6.mogenius.io/v1/tasks/';
+  var apiRoot = 'https://tasks-prod-tasks-database-qevqo1.mo6.mogenius.io/v1/tasks';
   var datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
   var tasksContainer = $('[data-tasks-container]');
 
