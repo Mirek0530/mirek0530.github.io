@@ -4,8 +4,14 @@ $(document).ready(function() {
   const datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
   const $tasksContainer = $('[data-tasks-container]');
 
+<<<<<<< HEAD
   var availableBoards = {};
   var availableTasks = {};
+=======
+  var apiRoot = 'https://tasks-prod-tasks-database-qevqo1.mo6.mogenius.io/v1/tasks';
+  var datatableRowTemplate = $('[data-datatable-row-template]').children()[0];
+  var tasksContainer = $('[data-tasks-container]');
+>>>>>>> 57aa3add2724ff7225431c0c1f3e607475b94bfc
 
   // init
 
@@ -197,6 +203,7 @@ $(document).ready(function() {
 
   $('[data-task-add-form]').on('submit', handleTaskSubmitRequest);
 
+<<<<<<< HEAD
   $tasksContainer.on('change','[data-board-name-select]', handleBoardNameSelect);
   $tasksContainer.on('click','[data-trello-card-creation-trigger]', handleCardCreationRequest);
   $tasksContainer.on('click','[data-task-edit-button]', toggleEditingState);
@@ -204,3 +211,10 @@ $(document).ready(function() {
   $tasksContainer.on('click','[data-task-submit-update-button]', handleTaskUpdateRequest);
   $tasksContainer.on('click','[data-task-delete-button]', handleTaskDeleteRequest);
 });
+=======
+  tasksContainer.on('click','[data-task-edit-button]', toggleEditingState);
+  tasksContainer.on('click','[data-task-edit-abort-button]', toggleEditingState);
+  tasksContainer.on('click','[data-task-submit-update-button]', handleTaskUpdateRequest);
+  tasksContainer.on('click','[data-task-delete-button]', handleTaskDeleteRequest);
+});
+>>>>>>> 57aa3add2724ff7225431c0c1f3e607475b94bfc
